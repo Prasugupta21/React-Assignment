@@ -10,7 +10,7 @@ const transformDepartments = (data: any[]): Department[] => {
     return data.map((dept, index) => ({
       id: index + 1,
       name: dept.department,
-      subDepartments: dept.sub_departments.map((subDept, subIndex) => ({
+      subDepartments: dept.sub_departments.map((subDept: any, subIndex: number) => ({
         id: (index + 1) * 100 + subIndex + 1,
         name: subDept,
       })),
