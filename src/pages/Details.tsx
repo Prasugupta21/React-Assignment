@@ -16,7 +16,7 @@ const transformDepartments = (data: any[]): Department[] => {
       })),
     }));
   };
-const SecondPage: React.FC = () => { 
+const Details: React.FC = () => { 
    const navigate=useNavigate();
    const location=useLocation();
 
@@ -27,7 +27,7 @@ const SecondPage: React.FC = () => {
     if (!userData.name || !userData.email || !userData.phone) {
 
     if (location.state && location.state.fromFormPage) {
-        alert('Please enter your SecondPage before accessing this page.');
+        alert('Please enter your Details before accessing this page.');
       }
       navigate('/');
     }
@@ -62,4 +62,4 @@ return (
   )
 }
 
-export default SecondPage
+export default Details;

@@ -3,7 +3,7 @@ import Form from './components/Form';
 import { Box } from '@mui/material';
 import {  Route, Routes } from 'react-router';
 
-import SecondPage from './pages/SecondPage';
+import { Details } from '@mui/icons-material';
 
 const App: React.FC = () => {
  
@@ -12,7 +12,7 @@ const App: React.FC = () => {
     <Routes>
       <Route path='/' element={<Form />}/>
      
-      <Route path='/second-page' element={<SecondPage />}/>
+      <Route path='/details' element={<Details />}/>
      
     </Routes>
   </Box>
