@@ -2,8 +2,8 @@ import React from 'react';
 import Form from './components/Form';
 import { Box } from '@mui/material';
 import {  Route, Routes } from 'react-router';
+import Details from './pages/Details';
 
-import { Details } from '@mui/icons-material';
 
 const App: React.FC = () => {
  
